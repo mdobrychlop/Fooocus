@@ -170,8 +170,8 @@ default_loras = get_config_item_or_set_default(
     key='default_loras',
     default_value=[
         [
-            "sd_xl_offset_example-lora_1.0.safetensors",
-            0.1
+            "NsfwPovAllInOneLoraSdxl-000009.safetensors",
+            0.6
         ],
         [
             "None",
@@ -263,7 +263,7 @@ checkpoint_downloads = get_config_item_or_set_default(
 lora_downloads = get_config_item_or_set_default(
     key='lora_downloads',
     default_value={
-        "nsfwpos": "https://huggingface.co/johnslegers/testlora1/blob/main/NsfwPovAllInOneLoraSdxl-000009.safetensors"
+        "NsfwPovAllInOneLoraSdxl-000009.safetensors": "https://huggingface.co/johnslegers/testlora1/blob/main/NsfwPovAllInOneLoraSdxl-000009.safetensors"
     },
     validator=lambda x: isinstance(x, dict) and all(isinstance(k, str) and isinstance(v, str) for k, v in x.items())
 )
